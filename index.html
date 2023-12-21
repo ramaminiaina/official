@@ -715,30 +715,24 @@
                   <div>
                      <!-- <input type="submit" value="Submit" class="btn btn-default btn-lg"> -->
                      <button class="submit" onclick="submitForm()">Submit</button>
-                     <input type="hidden" name="_next" value="#contact" />
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
                   </div>
+                  <div id="message-success" style="display: none;">Email sent successfully!</div>
+
                   <script>
                      function submitForm() {
-                         // Trigger the submit for the hidden submit input
-                         document.getElementById("contactForm").submit();
-                 
-                         // Display the success message
-                         document.getElementById("message-success").style.display = "block";
+                           // Trigger the submit for the hidden submit input
+                           document.getElementById("contactForm").submit();
+
+                           // Display the success message
+                           document.getElementById("message-success").style.display = "block";
+
+                           // Optionally, hide the form after displaying the success message
+                           document.getElementById("contactForm").style.display = "none";
                      }
-                 </script>
-                  
-                  <!-- Is is working -->
-                  <script>
-                     function submitForm() {
-                         // Trigger the submit for the hidden submit input
-                         document.getElementById("contactForm").submit();
-                         // Display the success message
-                        document.getElementById("message-success").style.display = "block";
-                     }
-                 </script>
+                  </script>
                  
 					</fieldset>
 				   </form> <!-- Form End -->
