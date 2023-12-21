@@ -689,7 +689,7 @@
             <div class="eight columns">
 
                <!-- form -->
-               <form action="inc/sendEmail.php" method="POST" id="contactForm" name="contactForm">
+               <form action="https://formspree.io/f/mkndwvqq" method="POST" id="contactForm" name="contactForm">
 					<fieldset>
 
                   <div>
@@ -714,12 +714,21 @@
 
                   <div>
                      <!-- <input type="submit" value="Submit" class="btn btn-default btn-lg"> -->
-                     <input type="hidden" name="_next" value="./index.html" />
                      <button class="submit" onclick="submitForm()">Submit</button>
+                     <input type="hidden" name="_next" value="#contact" />
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
                   </div>
+                  <script>
+                     function submitForm() {
+                         // Trigger the submit for the hidden submit input
+                         document.getElementById("contactForm").submit();
+                 
+                         // Display the success message
+                         document.getElementById("message-success").style.display = "block";
+                     }
+                 </script>
                   
                   <!-- Is is working -->
                   <script>
