@@ -50,15 +50,15 @@ header:before {
 header .banner {
    display: inline-block;
    vertical-align: middle;
-   margin: 0 auto;
+   margin: 100px auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 40px;
    text-align: center;
 }
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-   font: 90px/1.1em 'opensans-bold', sans-serif;
+   font: 75px/1.1em 'opensans-bold', sans-serif;
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
@@ -130,7 +130,7 @@ header .scrolldown a:hover { color: #11ABB0; }
 
 /* nav-wrap */
 #nav-wrap {
-   font: 12px 'opensans-bold', sans-serif;
+   font: 16px 'opensans-bold', sans-serif;
    width: 100%;
    text-transform: uppercase;
    letter-spacing: 2.5px;
@@ -207,10 +207,11 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
+   width: 200px;
+   height: 200px;
    border-radius: 100%;
 }
+
 #about .contact-details { width: 41.66667%; }
 #about .download {
    width: 58.33333%;
