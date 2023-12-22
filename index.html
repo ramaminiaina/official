@@ -763,9 +763,12 @@
                      <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
                   </div>
 
-                  <div class="submit-container">
-                     <input type="hidden" name="_next" value="./index.html"/>
-                     <button class="submit" onclick="message()">Submit</button>
+                  <div>
+                     <!-- <input type="hidden" name="_next" value="./index.html"/> -->
+                     <label for="contactVoid"> <span class="required"> </span></label>
+                     <div class="submit-container">
+                        <button class="submit" onclick="message()">Submit</button>
+                     </div>
                      
                      <!-- <span id="image-loader">
                         <img alt="" src="images/loader.gif">
@@ -800,7 +803,7 @@
                         email.value = '';
                         subject.value = '';
                         msg.value = '';
-                     }, 2000);
+                     }, 3000);
          
                      success.style.display = 'block';
                      danger.style.display = 'none';
@@ -809,7 +812,7 @@
          
                   setTimeout(() => {
                      messageDiv.style.display = 'none';
-                  }, 3500);
+                  }, 3000);
                }
                </script>
            

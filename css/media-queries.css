@@ -88,7 +88,9 @@
    }
    #contact .section-head p.lead { font: 17px/33px opensans-light, sans-serif; }
 
-
+   #contact .submit { 
+      margin: auto;
+   }
 }
 
 /* mobile wide/smaller tablets
@@ -215,11 +217,11 @@
    /* About Section
    -------------------------------------------------------------------- */
    #about .profile-pic { 
-      display: block;
+      display: flex;
       width: 200px;
       height: 200px;
-      min-height: 180px;
-      min-width: 180px;
+      min-height: auto;
+      min-width: auto;
       margin: 0 auto 55px;
    }
 
@@ -321,24 +323,16 @@
    }
 
    .submit-container {
-      background-color: #CC5200;
       position: relative;
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      /* padding-top: 20px; */
-   }
-
-   .submit { 
-      display: flex;
-      margin: 24px 0 24px 120px; 
-      justify-content: center;
    }
    
    .danger, .success {
       width: 100%;
-      margin-left: 0px;
+      margin: auto;
       margin-bottom: 30px;
    }
 
