@@ -884,8 +884,32 @@ call-to-action .button {
    width: 65%;
    margin-left: 26%;
 }
-#message-warning { color: #D72828; }
-#message-success { color: #11ABB0; }
+/* #message-warning { color: #D72828; }
+#message-success { color: #11ABB0; } */
+
+
+.message{
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+.message .success{
+    font-size: 16px;
+    color: green;
+    /* position: absolute; */
+    /* animation: buttons .3s linear; */
+    /* display: none; */
+}
+.message .danger{
+    font-size: 16px;
+    color: red;
+    /* position: absolute; */
+    /* transition: .3s; */
+    /* animation: buttons .3s linear; */
+    /* display: none; */
+}
 
 #message-warning i,
 #message-success i {

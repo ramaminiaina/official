@@ -21,7 +21,7 @@
    header .banner 
    { 
       padding-bottom: 120px;
-      margin-top: 15px;
+      margin-top: 50px;
    }
 
    header .banner-text h1 {
@@ -50,9 +50,7 @@
    #about .profile-pic {
       width: auto;
       height: auto;
-      /* min-height: 180px; */
       min-width: auto;
-      /* margin-right: 100px; */
    }
 
    #about .contact-details { width: 50%; }
