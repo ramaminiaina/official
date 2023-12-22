@@ -63,11 +63,11 @@
 
    /* Testimonials Section
    ------------------------------------------------------------------- */
-   #testimonials .header-col h1:before {
+   #quotes .header-col h1:before {
       font-size: 66px;
       line-height: 66px;
    }
-   #testimonials blockquote p {
+   #quotes blockquote p {
       font-size: 22px;
       line-height: 46px;      
    }
@@ -273,17 +273,17 @@
 
    /* Testimonials Section
    ----------------------------------------------------------------------- */
-   #testimonials .text-container { text-align: center; }
-   #testimonials h1 {
+   #quotes .text-container { text-align: center; }
+   #quotes h1 {
       font: 16px/24px 'opensans-bold', sans-serif;
       text-align: center;
       margin-bottom: 30px;
       text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
    }
-   #testimonials h1 span { display: block; }
-   #testimonials .header-col h1:before { content: none; }
-   #testimonials blockquote { padding-bottom: 24px; }
-   #testimonials blockquote p {
+   #quotes h1 span { display: block; }
+   #quotes .header-col h1:before { content: none; }
+   #quotes blockquote { padding-bottom: 24px; }
+   #quotes blockquote p {
       font-size: 20px;
       line-height: 42px;      
    }
