@@ -689,8 +689,8 @@
             <div class="eight columns">
 
                <!-- form -->
-               <input type="hidden" name="_next" value="#contact" />
-               <form action="https://formspree.io/f/mkndwvqq" method="POST" id="contactForm" name="contactForm">
+               <!-- <form action="https://formspree.io/f/mkndwvqq" method="POST" id="contactForm" name="contactForm"> -->
+               <form action="" method="POST" id="contactForm" name="contactForm"></form>
 					<fieldset>
 
                   <div>
@@ -704,7 +704,7 @@
                   </div>
 
                   <div>
-						   <label for="contactSubject">Subject</label>
+						   <label for="contactSubject">Subject<span class="required">*</span></label>
 						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
                   </div>
 
@@ -715,36 +715,54 @@
 
                   <div>
                      <!-- <input type="submit" value="Submit" class="btn btn-default btn-lg"> -->
-                     <button class="submit" onclick="submitForm()">Submit</button>
+                     <input type="hidden" name="_next" value="./index.html" />
+                     <button class="submit" onclick="message()">Submit</button>
+                     
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
                   </div>
-                  <div id="message-success" style="display: none;">Email sent successfully!</div>
-
-                  <script>
-                     function submitForm() {
-                           // Trigger the submit for the hidden submit input
-                           event.preventDefault();
-                           document.getElementById("contactForm").submit();
-
-                           // Display the success message
-                           document.getElementById("message-success").style.display = "block";
-
-                           // Optionally, hide the form after displaying the success message
-                           document.getElementById("contactForm").style.display = "none";
-                     }
-                  </script>
                  
 					</fieldset>
 				   </form> <!-- Form End -->
 
-               <!-- contact-warning -->
-               <div id="message-warning"> Error boy</div>
-               <!-- contact-success -->
-				   <div id="message-success">
-                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				   </div>
+               <div class="message">
+                  <div class="success" id="success">Your Message Successfully Sent!</div>
+                  <div class="danger" id="danger">Fields Can't be Empty!</div>
+              </div>
+
+               <script>
+                  function message(){
+                  var Name = document.getElementById('contactName');
+                  var email = document.getElementById('contactEmail');
+                  var subject = document.getElementById('contactSubject');
+                  var msg = document.getElementById('contactMessage');
+                  const success = document.getElementById('success');
+                  const danger = document.getElementById('danger');
+
+                  if(Name.value === '' || email.value === '' || msg.value === ''){
+                     danger.style.display = 'block';
+                  }
+
+                  else{
+                     setTimeout(() => {
+                           Name.value = '';
+                           email.value = '';
+                           subject.value = '';
+                           msg.value = '';
+                     }, 2000);
+
+                     success.style.display = 'block';
+                  }
+
+
+                  setTimeout(() => {
+                     danger.style.display = 'none';
+                     success.style.display = 'none';
+                  }, 4000);
+
+}
+               </script>
 
             </div>
 
