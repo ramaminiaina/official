@@ -888,35 +888,27 @@ call-to-action .button {
 #message-success { color: #11ABB0; } */
 
 
-.eight.columns{
+/* .eight.columns{
    position: relative;
-}
+} */
 
 .message{
    width: 100%;
    margin-left: auto;
    text-align: center;
-   /* position: absolute; */
 }
 
 .success{
    display: inline-block;
    font-size: 16px;
    color: green;
-	/* padding: 24px 24px; */
-	/* margin-bottom: 36px; */
-   /* width: 65%; */
    margin-left: 26%;
-   /* margin-bottom: 20px; */
 }
 .danger{
    display: inline-block;
    font-size: 16px;
    color: red;
    padding-bottom: 10px;
-	/* padding: 24px 24px; */
-	/* margin-bottom: 36px; */
-   /* width: 65%; */
    margin-left: 26%;
 }
 

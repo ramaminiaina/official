@@ -21,7 +21,7 @@
    header .banner 
    { 
       padding-bottom: 120px;
-      margin-top: 50px;
+      margin-top: 15px;
    }
 
    header .banner-text h1 {
@@ -315,10 +315,13 @@
      	margin-bottom: 6px;    	
       width: 100%;
    }
-   #contact button.submit { margin: 30px 0 24px 0; }
-   #message-warning, #message-success {
+   .submit { 
+      margin: 30px 0 24px 0; 
+   }
+
+   .danger, .success {
       width: 100%;
-      margin-left: 0;
+      margin: 30px 0 24px 0; 
    }
 
 
