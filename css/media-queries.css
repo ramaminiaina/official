@@ -228,6 +228,10 @@
       text-align: center;
       padding: 15px 20px;
    }
+
+   .button{
+      align-items: center;
+   }
    #about .main-col { padding-right: 30px; }
 
 
@@ -316,14 +320,21 @@
       width: 100%;
    }
 
-   #contact .submit-container {
+   .submit-container {
+      background-color: #CC5200;
+      position: relative;
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 30px;
+      /* padding-top: 20px; */
    }
 
-   /* .submit { margin: 30px 0 24px 0; } */
+   .submit { 
+      display: flex;
+      margin: 24px 0 24px 120px; 
+      justify-content: center;
+   }
    
    .danger, .success {
       width: 100%;
@@ -388,12 +399,6 @@
       height: auto;
       margin: 0 auto 55px;
    }
-
-   /* Contact section*/
-   .button-container {
-      flex-direction: column; /* Stack items vertically on smaller screens */
-      text-align: center; /* Center text within the button-container */
-  }
 
    /* footer
    ------------------------------------------------------------------------ */
