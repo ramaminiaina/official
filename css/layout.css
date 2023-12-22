@@ -888,27 +888,26 @@ call-to-action .button {
 #message-success { color: #11ABB0; } */
 
 
+.eight.columns{
+   position: relative;
+}
+
 .message{
-    width: 100%;
-    position: relative;
-    margin-bottom: 60px;
-    display: flex;
-    justify-content: center;
+   width: 100%;
+   margin-left: auto;
+   text-align: center;
+   position: absolute;
 }
-.message .success{
-    font-size: 16px;
-    color: green;
-    /* position: absolute; */
-    /* animation: buttons .3s linear; */
-    /* display: none; */
+
+.success{
+   display: inline-block;
+   font-size: 16px;
+   color: green;
 }
-.message .danger{
-    font-size: 16px;
-    color: red;
-    /* position: absolute; */
-    /* transition: .3s; */
-    /* animation: buttons .3s linear; */
-    /* display: none; */
+.danger{
+   display: inline-block;
+   font-size: 16px;
+   color: red;
 }
 
 #message-warning i,
