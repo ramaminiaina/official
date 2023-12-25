@@ -3,11 +3,21 @@
 <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+   </script>
+   <script type="text/javascript">
+      (function(){
+         emailjs.init("T540NM2OHj19GZbrz");
+      })();
+   </script>
+   <script src="/js/index.js"></script>
 
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Maminiaina Rakotovao</title>
+	<title>M@my official</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -31,6 +41,7 @@
 	<link rel="shortcut icon" href="favicon.png" >
 
 </head>
+
 
 <body>
 
@@ -740,84 +751,42 @@
 
             <div class="eight columns">
 
-               <!-- form -->
-               <!-- <form action="https://formspree.io/f/mkndwvqq" method="POST" id="contactForm" name="contactForm"> -->
-               <form action="" method="POST" id="contactForm" name="contactForm"></form>
-					<fieldset>
-
                   <div>
 						   <label for="contactName">Name <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactName" name="contactName">
+						   <input type="text" value="" size="35" id="contactName" name="contactName" required>
                   </div>
 
                   <div>
 						   <label for="contactEmail">Email <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail" required>
                   </div>
 
                   <div>
 						   <label for="contactSubject">Subject <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject" required>
                   </div>
 
                   <div>
                      <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" required></textarea>
                   </div>
 
                   <div>
                      <!-- <input type="hidden" name="_next" value="./index.html"/> -->
                      <label for="contactVoid"> <span class="required"> </span></label>
                      <div class="submit-container">
-                        <button class="submit" onclick="message()">Submit</button>
+                        <button class="submit" onclick="sendMail()">Submit</button>
                      </div>
                      
-                     <!-- <span id="image-loader">
-                        <img alt="" src="images/loader.gif">
-                     </span> -->
                   </div>
-                 
-					</fieldset>
-				   </form> <!-- Form End -->
 
-               <div class="message" style="display:none;">
+
+               <!-- <div class="message" style="display:none;">
                   <div class="success" id="success"><i class="fa fa-check"></i>FieldsYour Message Successfully Sent!</div>
                   <div class="danger" id="danger"> Fields can't be Empty!</div>
-               </div>
+               </div> -->
 
-              <script>
-               function message() {
-                  var Name = document.getElementById('contactName');
-                  var email = document.getElementById('contactEmail');
-                  var subject = document.getElementById('contactSubject');
-                  var msg = document.getElementById('contactMessage');
-                  const success = document.getElementById('success');
-                  const danger = document.getElementById('danger');
-                  const messageDiv = document.querySelector('.message');
-         
-                  if (Name.value === '' || email.value === '' || msg.value === '') {
-                     danger.style.display = 'block';
-                     success.style.display = 'none';
-                     messageDiv.style.display = 'block';
-                  } else {
-                     setTimeout(() => {
-                        Name.value = '';
-                        email.value = '';
-                        subject.value = '';
-                        msg.value = '';
-                     }, 3000);
-         
-                     success.style.display = 'block';
-                     danger.style.display = 'none';
-                     messageDiv.style.display = 'block';
-                  }
-         
-                  setTimeout(() => {
-                     messageDiv.style.display = 'none';
-                  }, 3000);
-               }
-               </script>
-           
+               
 
             </div>
 
